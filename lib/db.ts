@@ -1,5 +1,6 @@
 import { PrismaClient } from "@prisma/client";
-// add no-var
+// Prevent multiple Prisma Client instances in development
+// eslint-disable-next-line no-var
 declare global {
   var prisma: PrismaClient | undefined;}
 
